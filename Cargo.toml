@@ -4,3 +4,20 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# Core Reth dependencies
+reth = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+reth-exex = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+reth-node-ethereum = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+reth-node-api = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+reth-tracing = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+reth-primitives = { git = "https://github.com/paradigmxyz/reth.git", tag = "v1.9.3" }
+
+# Ethereum primitives
+alloy-primitives = { version = "1.0", default-features = false }
+alloy-consensus = { version = "1.0", default-features = false }
+
+futures = "0.3"
+eyre = "0.6"
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["full"] }
